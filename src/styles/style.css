@@ -6,20 +6,28 @@
     font-style: normal;
 }
 
+body {
+    height: 1500px;
+}
+
 * {
     font-family: 'Montserrat';
     text-decoration: none;
     color: #333333;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .d-flex {
     display: flex;
 }
 
-.d-block {
-    display: block;
+.wrap {
+    position: sticky; 
+    top: 0;
 }
-
 header {
     border-bottom: 1px solid #00000012;
 }
