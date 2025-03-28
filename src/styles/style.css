@@ -30,6 +30,7 @@ button:hover{
 }
 header {
     border-bottom: 1px solid #00000012;
+    background-color: #fff;
 }
 
 .first__header {
@@ -106,7 +107,11 @@ header {
     color: #888888;
 
 }
-
+.main__container{
+    margin: 60px 120px 0 120px;
+    width: 100%;
+    
+}
 .element-button {
     gap: 32px;
     flex-direction: row;
