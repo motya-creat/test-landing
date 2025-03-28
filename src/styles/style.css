@@ -1,10 +1,53 @@
 @font-face {
     font-family: "Montserrat", sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    src: url('href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
+  }
+
+*{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #333333;
+}
+.d-flex {
+    display: flex;
 }
 
-h1 {
-    font-family: "Montserrat";
+.d-block {
+    display: block;
+}
+
+header{
+    border-bottom: 1px solid #00000012;
+}
+
+.first__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.header__items {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 120px 0 120px;
+}
+
+.header__icons{
+    gap: 16px;
+}
+
+.b-header {
+    font-size: 20px;
+    color: #888888;
+}
+.b-header-call{
+    font-size: 14px;
+    color: #888888;
+}
+.header-number-call{
+    font-size: 1rem; font-weight: 600;
 }
