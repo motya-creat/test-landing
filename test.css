@@ -1,0 +1,36 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    transition: top 0.3s;
+    z-index: 1000;
+  }
+  .content {
+    height: 1500px;
+  }
+  
+  .second__header {
+    background-color: #f44336;
+    top: -60px; /* Вторая шапка скрыта по умолчанию */
+  }
+
+  /* Когда шапка фиксируется */
+  .second__header.sticky {
+    top: -60px; /* Первая шапка скрыта */
+  }
+  
+  .first__header.sticky {
+    top: 0; /* Вторая шапка появляется */
+  }
+  
