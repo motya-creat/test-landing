@@ -6,38 +6,24 @@
     font-style: normal;
 }
 
-body {
-    height: 1500px;
-}
-
 * {
     font-family: 'Montserrat';
-    text-decoration: none;
     color: #333333;
+    text-decoration: none;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 
 button:hover {
     cursor: pointer;
 }
-
-.wrap {
-    flex-wrap: wrap;
+.touch {
+    cursor: pointer;
 }
-
 .d-flex {
     display: flex;
 }
-
-/* .wrap {
-    width: 150px;
-    z-index: 1000;
-} */
-
-/* header {
-    position: fixed;
-    border-bottom: 1px solid #00000012;
-    background-color: #fff;
-} */
 
 .header {
     position: fixed;
@@ -50,8 +36,6 @@ button:hover {
     border-bottom: 1px solid #00000012;
     gap: 20px;
 }
-
-/* NEW/НОВЫЙ */
 
 .first__header {
     z-index: 1000;
@@ -85,6 +69,14 @@ button:hover {
     font-size: 20px;
     color: #888888;
 }
+.b-footer{
+    font-size: 20px;
+    color: #FBFBFD;
+}
+
+.under-line{
+    border-bottom: 1px solid #00000012;
+}
 
 .b-header-call {
     font-size: 14px;
@@ -94,6 +86,10 @@ button:hover {
 .b-second-header-search {
     font-size: 19px;
     color: #888888;
+}
+.b-second-header-search:hover{
+    transition: 0.3s;
+    color: #333333;
 }
 
 .b-yellow {
@@ -114,27 +110,16 @@ button:hover {
     height: 50px;
 }
 
-.wrap__second__header {
-    width: 100%;
-    width: 100%;
-    z-index: 100;
-}
-
 .second__header {
     top: -60px;
     /* Вторая шапка скрыта по умолчанию */
     height: 100px;
 }
 
-/* .second__header__content {
-    height: 100%;
-    margin: 0 120px 0 100px;
-    justify-content: space-between;
-    } */
 .second__header__content {
     align-items: center;
     height: 100%;
-    gap: 40px;
+    gap: 47px;
     margin: 0 120px 0 100px;
 }
 
@@ -212,9 +197,9 @@ button {
     width: 997px;
     height: 600px;
     background-image:
-        url('https://s3-alpha-sig.figma.com/img/fd42/ce73/7ade825e08e975a3167f1dd896492d00?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mQ4Rt7tV-vn3CE~A~V-lXp4xv~Vec~urC5LjrxGqvtVAaYvCLm9IdJjo16G7Vn88NCOZJktCLQtlaHsgbNQJfifW716-1e~u9n9EI~B3tDygD4gDaXUPyel6kaJXKrHWQ8hAAnJD7Ujc10-rwV4mqVvjRTUJ2AMSh6oUgdZ91awrKtYXNqQxXPaO6hlFPiZq9iakKndWhJc8q~0VY7o56IzouwZzmwnbnWh1YrK1B5yMCirSt3cXQziHCViVfGnTKoYH0j1RHHsvq~1RE7IvouBM~-kHL7iyqzmNJK5MrNpegFftmx769creSYEKM2dZkwK2fzXqthjtKVdLnBSLOg__');
+    url('https://s3-alpha-sig.figma.com/img/70e8/9ad7/4e89c10c431f11d2bb547996a4a53ba3?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=i8RCY400uwuBGgGv-22UH0zrvjczhMDAaP1JWBuBPVmnJ~BCs-eq-UhVW1u6XxoxgUJW3rf~5vQbZ4hxvZx7anfoaTrLS8pTcsGF3epRx7w1rPd~VOHnf48Deq9C~~esWHScxaTWop-nq6aZnlE52qP9ZKhVXz8pVZaLUdjH2UYbY~LoOy90r7qDR-P4soCa3qXYT-OVEGc0cqBNjejejDHHqiv42-~pkUxjeMUxykTvPZ-l-yE2lkePx0JNFEX-j3SfS9C1~~zEa16UyNdqsPeGyUSmJSJW0v~3XU6V3XtwjqZZ0y6C-R-lGkYVyHtNDy3Qa1HepEgUi7efAlX1aQ__');
     background-size: cover;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
 .head__left__logo__text {
@@ -223,7 +208,7 @@ button {
     margin: 30px 0 0 60px;
     font-size: 3.0rem;
     font-weight: 600;
-    gap: 16px;
+    gap: 10px;
 }
 
 .head__left__logo__text p {
@@ -261,4 +246,161 @@ button {
 button:hover {
     transition: 0.3s;
     filter: brightness(80%);
+}
+
+.advantages {
+    justify-content: space-between;
+    width: 1199px;
+    height: 1057px;
+    margin: 85px 0 120px 0;
+}
+
+.card {
+    border: 1px solid #2424241A;
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0px 5px 10px 5px #eeebeb;
+}
+
+.cards {
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card i {
+    color: #E9B902;
+    width: 22px;
+    height: 17px;
+}
+
+.card a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.title-main {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-text {
+    font-size: 1.125;
+    padding-bottom: 20px;
+}
+
+.small-card {
+    width: 360px;
+    height: 220px;
+}
+
+.big-card {
+    width: 580px;
+    height: 250px;
+}
+
+.classification {
+    color: #242424;
+    font-size: 1.188rem;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 3.125rem;
+}
+
+.footer{
+    bottom: 0;
+    flex-direction: column;
+    background-color: #27333E;
+    padding: 43px 120px 32px 120px;
+}
+
+
+.footer__logo{
+    padding: 20px;
+    width: 144px;
+    height: 50px;
+}
+
+.footer__top{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4e4e4e;
+}
+
+.footer__element{
+    gap: 24px;
+}
+
+.footer__element a{
+    color: #FBFBFD;
+    font-weight: 600;
+}
+.social__icons{
+    gap: 16px;
+}
+
+.footer__contacts{
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 0 35px 0;
+    border-bottom: 2px solid #4e4e4e;
+}
+.contacts__left{
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__mail{
+    flex-direction: column;
+}
+.contacts__mail p{
+    color: #FBFBFD;
+    font-weight: 600;
+}
+.contacts__mail a {
+    text-decoration: solid;
+    color: #FBFBFD;
+}
+.contacts__phone {
+    flex-direction: column;
+}
+.contacts__phone p {
+    color: #FBFBFD;
+    font-weight: 600;
+}
+.contacts__phone a {
+    text-decoration: solid;
+    color: #FBFBFD;
+}
+.contacts__addres {
+    flex-direction: column;
+}
+.contacts__addres p {
+    color: #FBFBFD;
+    font-weight: 600;
+}
+.contacts__addres a {
+    text-decoration: solid;
+    color: #FBFBFD;
+}
+.footer__bottom {
+    padding: 24px 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__bottom a{
+    color: #FBFBFD; 
+}
+.footer__bottom p {
+    color: #FBFBFD;
+    text-align: right;
 }
