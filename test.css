@@ -1,36 +1,108 @@
-/* Базовые стили */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    transition: top 0.3s;
-    z-index: 1000;
-  }
-  .content {
-    height: 1500px;
-  }
-  
-  .second__header {
-    background-color: #f44336;
-    top: -60px; /* Вторая шапка скрыта по умолчанию */
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  /* Когда шапка фиксируется */
-  .second__header.sticky {
-    top: -60px; /* Первая шапка скрыта */
-  }
-  
-  .first__header.sticky {
-    top: 0; /* Вторая шапка появляется */
-  }
-  
+* {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  color: #333333;
+}
+
+
+.b-header {
+  font-size: 20px;
+  color: #888888;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  padding: 13px;
+  transition: top 0.3s;
+  z-index: 1000;
+  border-bottom: 1px solid black;
+  gap: 20px;
+}
+.d-flex{
+  display: flex;
+}
+
+.second__header__content {
+
+  height: 100%;
+  gap: 40px;
+  margin: 0 120px 0 100px;
+}
+
+
+.header__items {
+  width: 100%;
+}
+
+.header__icons {
+  gap: 16px;
+}
+
+.header__items {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 120px 0 120px;
+}
+
+.header__icons {
+  gap: 16px;
+}
+
+.b-header {
+  font-size: 20px;
+  color: #888888;
+}
+
+.b-header-call {
+  font-size: 14px;
+  color: #888888;
+}
+.b-second-header-search {
+  font-size: 19px;
+  color: #888888;
+}
+
+.b-yellow {
+  color: #E9B902;
+}
+
+.header-number-call {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.element {
+  gap: 24px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.header-top {
+  width: 100%;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-bottom {
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+}
+
+main {
+  margin-top: 60px;
+  /* Отступ для содержания под шапками */
+}
+
+.content {
+  padding: 120px 100px 0 120px;
+}
