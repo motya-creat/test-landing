@@ -1,51 +1,17 @@
-// let lastScroll = 0
-// const defaultOffset = 200
-// const header = document.querySelector('.first__header');
-
-// const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop
-// const containHide = () => header.classList.contains('hide')
-
-// window.addEventListener('scroll', () => {
-
-//     if (scrollPosition() > lastScroll && !containHide()) {
-//         //scroll down
-//         console.log('down')
-//         header.classList.add(`hide`)
-//     } else if (scrollPosition() < lastScroll && containHide()) {
-//         //scroll up
-//         console.log('up')
-//         header.classList.remove(`hide`)
-//     }
-
-//     lastScroll = scrollPosition()
-// })
-
-// const secondHeader = documentSelector('.second__header')
-// window.addEventListener('header_fix', () => {
-
-//     if (header.classList('hide')) {
-//         secondHeader.classList.add('top')
-//     } else{
-//         secondHeader.classList.remove('top')
-//     }
-// })
-
-
-const first__header = document.getElementById('second__header');
-const second__header = document.getElementById('first__header');
-
+// Header
 let lastScrollTop = 0;
+const headerTop = document.querySelector('.header-top');
+const headerBottom = document.querySelector('.header-bottom');
 
-window.onscroll = function() {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (currentScroll > lastScrollTop) {
-    first__header.classList.add('sticky');
-    second__header.classList.add('sticky');
-  } else {
-    first__header.classList.remove('sticky');
-    second__header.classList.remove('sticky');
-  }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-};
+    if (currentScroll > lastScrollTop) {
+        headerTop.style.top = '-50px'; 
+        headerBottom.style.top = '0'; 
+    } else {
+        headerTop.style.top = '0'; 
+        headerBottom.style.top = '50px';
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
