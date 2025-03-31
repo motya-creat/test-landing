@@ -31,8 +31,8 @@
 // })
 
 
-const first__header = document.getElementById('first__header');
-const second__header = document.getElementById('second__header');
+const first__header = document.getElementById('second__header');
+const second__header = document.getElementById('first__header');
 
 let lastScrollTop = 0;
 

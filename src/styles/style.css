@@ -19,7 +19,9 @@ body {
 button:hover {
     cursor: pointer;
 }
-
+.wrap {
+    flex-wrap: wrap;
+}
 .d-flex {
     display: flex;
 }
@@ -109,6 +111,16 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+.second__header.sticky {
+    top: -60px;
+    /* Первая шапка скрыта */
+  }
+  
+  .first__header.sticky {
+    top: 0;
+    /* Вторая шапка появляется */
+  }
+
 button{
     border: none;
 }
@@ -140,9 +152,6 @@ button{
     align-items: center;
     flex-direction: column;
     margin: 51px 120px 0 120px;
-}
-.main__head {
-    
 }
 
 .main__head__right {
