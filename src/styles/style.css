@@ -11,16 +11,19 @@
     color: #333333;
     text-decoration: none;
 }
-.wrap{
+
+.wrap {
     flex-wrap: wrap;
 }
 
 button:hover {
     cursor: pointer;
 }
+
 .touch {
     cursor: pointer;
 }
+
 .d-flex {
     display: flex;
 }
@@ -69,12 +72,13 @@ button:hover {
     font-size: 20px;
     color: #888888;
 }
-.b-footer{
+
+.b-footer {
     font-size: 20px;
     color: #FBFBFD;
 }
 
-.under-line{
+.under-line {
     border-bottom: 1px solid #00000012;
 }
 
@@ -87,7 +91,8 @@ button:hover {
     font-size: 19px;
     color: #888888;
 }
-.b-second-header-search:hover{
+
+.b-second-header-search:hover {
     transition: 0.3s;
     color: #333333;
 }
@@ -197,7 +202,7 @@ button {
     width: 997px;
     height: 600px;
     background-image:
-    url('https://s3-alpha-sig.figma.com/img/70e8/9ad7/4e89c10c431f11d2bb547996a4a53ba3?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=i8RCY400uwuBGgGv-22UH0zrvjczhMDAaP1JWBuBPVmnJ~BCs-eq-UhVW1u6XxoxgUJW3rf~5vQbZ4hxvZx7anfoaTrLS8pTcsGF3epRx7w1rPd~VOHnf48Deq9C~~esWHScxaTWop-nq6aZnlE52qP9ZKhVXz8pVZaLUdjH2UYbY~LoOy90r7qDR-P4soCa3qXYT-OVEGc0cqBNjejejDHHqiv42-~pkUxjeMUxykTvPZ-l-yE2lkePx0JNFEX-j3SfS9C1~~zEa16UyNdqsPeGyUSmJSJW0v~3XU6V3XtwjqZZ0y6C-R-lGkYVyHtNDy3Qa1HepEgUi7efAlX1aQ__');
+        url('https://s3-alpha-sig.figma.com/img/70e8/9ad7/4e89c10c431f11d2bb547996a4a53ba3?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=i8RCY400uwuBGgGv-22UH0zrvjczhMDAaP1JWBuBPVmnJ~BCs-eq-UhVW1u6XxoxgUJW3rf~5vQbZ4hxvZx7anfoaTrLS8pTcsGF3epRx7w1rPd~VOHnf48Deq9C~~esWHScxaTWop-nq6aZnlE52qP9ZKhVXz8pVZaLUdjH2UYbY~LoOy90r7qDR-P4soCa3qXYT-OVEGc0cqBNjejejDHHqiv42-~pkUxjeMUxykTvPZ-l-yE2lkePx0JNFEX-j3SfS9C1~~zEa16UyNdqsPeGyUSmJSJW0v~3XU6V3XtwjqZZ0y6C-R-lGkYVyHtNDy3Qa1HepEgUi7efAlX1aQ__');
     background-size: cover;
     border-radius: 25px;
 }
@@ -249,10 +254,12 @@ button:hover {
 }
 
 .advantages {
-    justify-content: space-between;
     width: 1199px;
     height: 1057px;
     margin: 85px 0 120px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
@@ -260,6 +267,9 @@ button:hover {
     padding: 20px;
     border-radius: 5%;
     box-shadow: 0px 5px 10px 5px #eeebeb;
+    flex: auto;
+    width: 20rem;
+
 }
 
 .cards {
@@ -294,16 +304,6 @@ button:hover {
     padding-bottom: 20px;
 }
 
-.small-card {
-    width: 360px;
-    height: 220px;
-}
-
-.big-card {
-    width: 580px;
-    height: 250px;
-}
-
 .classification {
     color: #242424;
     font-size: 1.188rem;
@@ -314,26 +314,21 @@ button:hover {
     font-size: 3.125rem;
 }
 
-.partners{
-    width: 1200px;
-    height: 690px;
+.partners {
+ justify-content: center;
+ flex-wrap: wrap-reverse;
 }
-.partners-card{
+
+.partners-card {
     border: 1px solid #2424241A;
     width: 400px;
     height: 273px;
     justify-content: center;
-}
-.partners-card i { 
-    width: 250px;
-    height: 190px;
+    flex-grow: unset;
 }
 
 
-
-
-
-.footer{
+.footer {
     bottom: 0;
     flex-direction: column;
     background-color: #27333E;
@@ -341,84 +336,97 @@ button:hover {
 }
 
 
-.footer__logo{
+.footer__logo {
     padding: 20px;
     width: 144px;
     height: 50px;
 }
 
-.footer__top{
+.footer__top {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #4e4e4e;
 }
 
-.footer__element{
+.footer__element {
     gap: 24px;
 }
 
-.footer__element a{
+.footer__element a {
     color: #FBFBFD;
     font-weight: 600;
 }
-.social__icons{
+
+.social__icons {
     gap: 16px;
 }
 
-.footer__contacts{
+.footer__contacts {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     padding: 25px 0 35px 0;
     border-bottom: 2px solid #4e4e4e;
 }
-.contacts__left{
+
+.contacts__left {
     gap: 50px;
     align-items: center;
     justify-content: space-between;
 }
 
-.contacts__mail{
+.contacts__mail {
     flex-direction: column;
 }
-.contacts__mail p{
+
+.contacts__mail p {
     color: #FBFBFD;
     font-weight: 600;
 }
+
 .contacts__mail a {
     text-decoration: solid;
     color: #FBFBFD;
 }
+
 .contacts__phone {
     flex-direction: column;
 }
+
 .contacts__phone p {
     color: #FBFBFD;
     font-weight: 600;
 }
+
 .contacts__phone a {
     text-decoration: solid;
     color: #FBFBFD;
 }
+
 .contacts__addres {
     flex-direction: column;
 }
+
 .contacts__addres p {
     color: #FBFBFD;
     font-weight: 600;
 }
+
 .contacts__addres a {
     text-decoration: solid;
     color: #FBFBFD;
 }
+
 .footer__bottom {
     padding: 24px 0 0 0;
     align-items: center;
     justify-content: space-between;
 }
-.footer__bottom a{
-    color: #FBFBFD; 
+
+.footer__bottom a {
+    color: #FBFBFD;
 }
+
 .footer__bottom p {
     color: #FBFBFD;
     text-align: right;
