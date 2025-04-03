@@ -315,8 +315,9 @@ button:hover {
 }
 
 .partners {
- justify-content: center;
- flex-wrap: wrap-reverse;
+    width: 1199px;
+    flex-wrap: wrap;
+
 }
 
 .partners-card {
@@ -324,9 +325,17 @@ button:hover {
     width: 400px;
     height: 273px;
     justify-content: center;
-    flex-grow: unset;
 }
 
+.partners .small-card {
+    flex-grow: 1;
+    width: 15rem;
+}
+
+.partners .big-card {
+    flex-grow: 2;
+    width: 20rem;
+}
 
 .footer {
     bottom: 0;
